@@ -10,8 +10,6 @@ const emitEvent = () => {
 }
 </script>
 
-
-
 <template>
     <div>
         <h3>{{ message }}</h3>

@@ -10,8 +10,6 @@ const handleMessage = (newMessage) => {
 }
 </script>
 
-
-
 <template>
     <ChildComponent :message="message" @update-message="handleMessage" />
     <p>Bericht: {{ sentMessage }}</p>
