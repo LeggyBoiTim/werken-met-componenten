@@ -1,9 +1,14 @@
 <script setup>
-import ParentComponent from './components/ParentComponent.vue';
+import ParentComponentPropsEmits from './components/ParentComponentPropsEmits.vue';
+import ParentComponentModel from './components/ParentComponentModel.vue';
 </script>
 
 <template>
-    <ParentComponent/>
+    <ParentComponentPropsEmits/>
+    <br>
+    <p>---------------</p>
+    <br>
+    <ParentComponentModel/>
 </template>
 
 <style scoped>
