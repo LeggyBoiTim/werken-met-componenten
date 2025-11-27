@@ -2,15 +2,13 @@
 import { ref } from 'vue';
 import ChildComponent from './ChildComponentPropsEmits.vue';
 
-const message = 'Test';
-const receivedMessage = ref('');
+const message = ref('Test');
 
 const handleMessage = (content) => {
-    receivedMessage.value = content;
+    message.value = content;
 }
 </script>
 
 <template>
     <ChildComponent :message="message" @sendMessage="handleMessage" />
-    <p>Bericht: {{ receivedMessage }}</p>
 </template>

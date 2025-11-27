@@ -5,7 +5,7 @@ defineProps({
 
 const emit = defineEmits(['sendMessage']);
 
-const sendMessageEvent = () => {
+const updateMessage = () => {
     emit('sendMessage', 'Nieuw bericht');
 }
 </script>
@@ -16,6 +16,6 @@ const sendMessageEvent = () => {
     </div>
 
     <div>
-        <button @click="sendMessageEvent">Verzend Bericht</button>
+        <button @click="updateMessage">Verzend Bericht</button>
     </div>
 </template>
